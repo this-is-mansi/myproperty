@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body
+    {
+        background-color: #060c31;
+        
+    }
+    .con
+    {display: flex;
+    flex-wrap:wrap;
+   
+    position: relative;
+    padding-left: 20px;
+    padding-top: 100px;
+    padding-right: 0px;
+       align-items: center;
+    max-height: 100px;
+   
+   
+    }
+    .con .card{
+        background-color: #060c21;
+        font-family:sans-serif;
+        margin-top: -85px;
+         width: 97vw;
+        height: 95vh;
+        transition:0.3s ease-in-out;
+        position: relative;
+        
+    }
+    .con .card::before{
+        content:'';
+        z-index: -1;
+        position: absolute;
+        top:-2px;
+        bottom:-2px;
+        right:-2px;
+        left:-2px;
+       background-color:#fff;
+       
+    }
+    .con .card::after{
+        content:'';
+        background-color:#fff;
+        z-index: -1;
+        position: absolute;
+        top:-2px;
+        bottom:-2px;
+        right:-2px;
+        left:-2px;
+        filter: blur(40px);
+
+    }
+
+    
+
+    .card:before,
+    .card::after
+    {
+        background: linear-gradient(235deg, #910fe7,#3f559b,#be0000);
+    }
+
+
+</style>
+
+</head>
+<body>
+   <div class="con">
+         
+    <div class="card">
+      
+    </div>
+           </div>
+       
+ 
+
+
+
+
+   
+
+
+</body>
+</html>
